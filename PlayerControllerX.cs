@@ -6,7 +6,7 @@ using UnityEngine;
 // Make the plane go forward - Done
 // Slow the plane down to a manageable speed - Done
 // Make the plane tilt only if the user presses the up/down arrows - Done
-// Create a script that spins the plane’s propeller
+// Create a script that spins the plane’s propeller - Done
 
 
 public class PlayerControllerX : MonoBehaviour
@@ -14,8 +14,6 @@ public class PlayerControllerX : MonoBehaviour
     public float speed = 5.0f;
     public float rotationSpeed;
     public float verticalInput;
-
-    public float forwardInput;
 
     // Start is called before the first frame update
     void Start()
