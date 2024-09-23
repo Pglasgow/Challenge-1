@@ -3,11 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 
 // Challenge requirments
-// Make the plane go forward
-// Slow the plane down to a manageable speed
-// Make the plane tilt only if the user presses the up/down arrows
-// Reposition it so it’s beside the plane
-// Make the camera follow the plane
+// Make the plane go forward - Done
+// Slow the plane down to a manageable speed - Done
+// Make the plane tilt only if the user presses the up/down arrows - Done
 // Create a script that spins the plane’s propeller
 
 
@@ -30,7 +28,7 @@ public class PlayerControllerX : MonoBehaviour
     {
         // get the user's vertical input
         verticalInput = Input.GetAxis("Vertical");
-        forwardInput = Input.GetAxis("Horizontal");
+
 
         // move the plane forward at a constant rate
         transform.Translate(Vector3.forward * Time.deltaTime * speed);

@@ -2,10 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+// Challenge requirments
+// Reposition it so it’s beside the plane
+// Make the camera follow the plane
+
+
 public class FollowPlayerX : MonoBehaviour
 {
-    public GameObject plane;
-    private Vector3 offset;
+    public GameObject Player;
+    private Vector3 offset = new Vector3(22,1,5);
 
     // Start is called before the first frame update
     void Start()
@@ -14,8 +19,8 @@ public class FollowPlayerX : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void LateUpdate()
     {
-        transform.position = plane.transform.position + offset;
+        transform.position = Player.transform.position + offset;
     }
 }
